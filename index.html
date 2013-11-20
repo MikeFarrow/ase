@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+
+	<!-- Sample app for shares management which reads data from a third party rest server -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+</head>
+<body>
+    
+<div ng-app ng-controller="MainCtrl">
+
+	<h1>Dream shares</h1>
+	<input ng-model='name' ng-model-instant>
+	<p/>
+	<button ng-click="doNew()">Do new</button>
+	<p/>
+	<span ng:bind="name"></span> <br/>
+   Symbol: <span ng:bind="result"></span><br/> 
+   Price: <span ng:bind="price"></span> <br/>
+   Change: <span ng:bind="change"></span> <br/>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
